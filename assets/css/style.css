@@ -42,6 +42,12 @@ a{color:inherit;text-decoration:none}
 .stat{border:1px solid var(--border);border-radius:var(--radius-sm);text-align:center;padding:.75rem;background:var(--surface);box-shadow:var(--shadow)}
 .stat .value{font-size:1.6rem;font-weight:700}
 .stat .label{color:var(--muted);font-size:.8rem}
+.skill-icon {width: 50px;height: 50px;margin: 0 auto 0.75rem auto;filter: none;transition: filter 0.25s ease, transform 0.25s ease;}
+.card.center:hover .skill-icon {  background-color: #f8fafc;transform: translateY(-3px);transition: all 0.25s ease;}
+.grid-2.cards {display: grid;grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));align-items: stretchgap: 1.5rem;}
+.cards .card {display: flex;flex-direction: column;justify-content: space-between;height: 100%;min-height: 380px; /* adjust if needed */}
+.cards .card img,
+.cards .card video {width: 100%;height: 200px;object-fit: cover;border-radius: 10px;margin-top: 0.75rem;}
 
 /* Header / Nav */
 .site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.8);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--border)}
