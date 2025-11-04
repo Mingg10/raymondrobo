@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TRUSSES – Project Detail</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <!-- Nav (same as home) -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="../index.html#home">Raymond Yang</a>
+      <ul class="nav-links">
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="../index.html#qualification">Qualification</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn ghost" href="../resume.pdf" target="_blank">Resume</a>
+        <a class="btn ghost" href="https://github.com/Mingg10" target="_blank" aria-label="GitHub">GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/mingguang-yang-308a0a23a" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sub-hero -->
+    <section class="section subhero">
+      <div class="container">
+        <a class="breadcrumb" href="../index.html#projects">← Back to Projects</a>
+        <h1>NASA LASSIE: Multi-Robot Docking System (TRUSSES)</h1>
+        <p class="muted"> Jan 2025 - Now· University of Pennsylvania </p>
+
+        <div class="pill-row">
+          <span class="pill">ROS 2</span>
+          <span class="pill">April Tag</span>
+          <span class="pill">C++</span>
+          <span class="pill">Python</span>
+          <span class="pill">State Estimation</span>
+          <span class="pill">Controls</span>
+          <span class="pill">Raspberry Pi</span>
+          <span class="pill">Extended Kalman Filter</span>
+          <span class="pill">Mechanical Design</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Media gallery -->
+    <section class="section">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery">
+          <img class="media" src="../assets/img/nasa/trusses.gif" alt="Field docking demo" />
+          <img class="media" src="../assets/img/nasa/SZT_CAD.png" alt="Docking view" />
+          <img class="media" src="../assets/img/nasa/spirit.jpg" alt="Spirit + turret setup" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview / Highlights -->
+    <section class="section">
+      <div class="container two-col">
+        <div class="card">
+          <h2>Overview</h2>
+          <p>
+            Built a modular rover platform under NASA LASSIE. Implemented AprilTag-based self-docking with
+            yaw/pitch alignment and range gating; fused GPS/IMU for localization using an EKF; coordinated
+            rover–turret behavior with ROS 2 actions.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Highlights</h2>
+          <ul class="bullets">
+            <li>Docking alignment error &lt; <b>1.5° RMS</b> across varied lighting</li>
+            <li>State estimation drift &lt; <b>0.8%</b> over 300 m run (GPS + IMU EKF)</li>
+            <li>Deterministic recovery behaviors for tag loss / occlusion</li>
+            <li>Reusable ROS 2 packages with launch + params for field tuning</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-lg">Raymond Yang</div>
+        <div class="muted">Robotics / Mechatronics Engineer</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
