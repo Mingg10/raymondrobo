@@ -37,6 +37,15 @@
           <p class="eyebrow">Hi, I’m</p>
           <h1>Raymond Yang</h1>
           <p class="tagline">Robotics/Mechatronics Engineer</p>
+          <p class="intro-text">
+            I’m a robotics engineer with hands-on experience in
+            <b>control algorithms</b>, <b>mechanical design</b>,
+            <b>embedded systems</b>, and <b>software integration</b>.
+            My industry background in manufacturing and process optimization
+            taught me to design to <b>real engineering standards</b>.
+            I specialize in building reliable robotic systems from concept
+            to control—bridging mechanical precision with intelligent automation.
+          </p>
           <div class="actions">
             <a class="btn" href="mailto:minggyan@seas.upenn.edu">Email</a>
             <a class="btn ghost" href="resume.pdf" target="_blank">View Resume</a>
@@ -141,9 +150,9 @@
                 <h3>Autonomous Quadrotor with Visual–Inertial Odometry (VIO)</h3>
               </div>
             </div>
-            <p>Built a ROS2-based drone simulation integrating IMU and stereo vision for real-time state estimation and trajectory tracking; implemented VIO achieving &lt;1% drift over 100 m flight.</p>
+            <p>Built a ROS-based drone simulation integrating IMU and stereo vision for real-time state estimation and trajectory tracking; implemented VIO achieving &lt;1% drift over 100 m flight.</p>
             <img class="thumb" src="assets/img/quadcopter/thumb.png" alt="Quadrotor VIO Simulation" />
-            <p><a class="link" href="https://github.com/yourname/quad-vio" target="_blank">View project ↗</a></p>
+            <p><a class="link" href="https://github.com/Mingg10/Quadrotor-control-with-VIO" target="_blank">View project ↗</a></p>
           </article>
 
           <article class="card">
@@ -155,7 +164,7 @@
             </div>
             <p>Designed and built a custom battle robot from scratch; fused Vive and ToF sensors for real-time localization, implemented motor control on ESP32 in C++, and prototyped circuits on breadboard.</p>
             <img class="thumb" src="assets/img/arena/thumb.jpg" alt="Arena Battle Robot" />
-            <p><a class="link" href="https://github.com/yourname/arena-battle-robot" target="_blank">View project ↗</a></p>
+            <p><a class="link" href="projects/arena.html" target="_blank">View project ↗</a></p>
           </article>
 
           <article class="card">
@@ -165,9 +174,9 @@
                 <h3>Franka Emika Panda Manipulator — Block Stacking</h3>
               </div>
             </div>
-            <p>Implemented inverse kinematics and QP-based motion control in ROS; integrated camera vision for real-time grasp detection and pose alignment.</p>
+            <p>Implemented inverse kinematics and Hybrid PF-based motion control in ROS; integrated camera vision for real-time grasp detection and pose alignment.</p>
             <img class="thumb" src="assets/img/franka/Pick.gif" alt="Franka Panda Robot" />
-            <p><a class="link" href="https://github.com/yourname/franka-block-stacking" target="_blank">View project ↗</a></p>
+            <p><a class="link" href="https://github.com/Mingg10/Franka-Emika-Panda-Control" target="_blank">View project ↗</a></p>
           </article>
 
           <article class="card">
@@ -179,9 +188,46 @@
             </div>
             <p>Developed a real-time embedded navigation system on Arduino using Python; integrated ultrasonic, encoder, and IR sensors with particle filter for localization and obstacle avoidance, and implemented A* for path planning.</p>
             <img class="thumb" src="assets/img/maze/thumb.png" alt="Maze Solving Robot" />
-            <p><a class="link" href="https://github.com/yourname/maze-solving-robot" target="_blank">View project ↗</a></p>
+            <p><a class="link" href="projects/maze.html" target="_blank">View project ↗</a></p>
           </article>
 
+          <article class="card">
+            <div class="row">
+              <div>
+                <div class="muted">2023</div>
+                <h3>Optical Pressure Transducer — Mechatronic Sensing</h3>
+              </div>
+            </div>
+            <p>Designed and fabricated an optical pressure transducer using photodiode sensing and signal conditioning; implemented MATLAB-based real-time calibration and achieved ±2% measurement precision under 350 °C and 10,000 PSI test conditions.</p>
+            <img class="thumb" src="assets/img/OPT/Sensor.png" alt="Optical Pressure Transducer" />
+            <p><a class="link" href="projects/optical_sensor.html" target="_blank">View project ↗</a></p>
+          </article>
+
+          <article class="card">
+            <div class="row">
+              <div>
+                <div class="muted">2022</div>
+                <h3>Modular Keyboard — Macro Pad & LCD UI</h3>
+              </div>
+            </div>
+            <p>Modified existing QMK-based keyboard firmware to add new macro and RGB control functions; fabricated and assembled the keyboard with custom key layout and casing.</p>
+            <img class="thumb" src="assets/img/keyboard/thumb.jpg" alt="Modular Keyboard with LCD" />
+            <p><a class="link" href="https://penno365-my.sharepoint.com/:f:/g/personal/minggyan_upenn_edu/EkVv4GD01sdHqneqCF3u-mYBJQfb3h2i-g5ZbTpSzvH2eg?e=XxKxzg" target="_blank">View project ↗</a></p>
+          </article>
+
+          <article class="card">
+            <div class="row">
+              <div>
+                <div class="muted">2021</div>
+                <h3>Adjustable DC Bench Power Supply — PCB Design & Fabrication</h3>
+              </div>
+            </div>
+            <p>Designed and fabricated a regulated DC power supply for laboratory and prototyping use, providing 0–15 V and 0–3 A adjustable outputs with &lt;1% load regulation. Emphasized reliability and usability for testing sensors and microcontrollers.</p>
+            <img class="thumb" src="assets/img/power/thumb.jpg" alt="Adjustable DC Power Supply" />
+            <p><a class="link" href="projects/power_supply.html" target="_blank">View project ↗</a></p>
+          </article>
+
+          
           <article class="card">
             <div class="row">
               <div>
@@ -245,8 +291,8 @@
           </div>
 
           <div class="card center">
-            <img class="skill-icon" src="assets/img/icons/git.svg" alt="Git icon" />
-            <b>Git</b>
+            <img class="skill-icon" src="assets/img/icons/KiCAD.svg" alt="KiCAD icon" />
+            <b>KiCAD</b>
             <div class="muted">Intermediate</div>
           </div>
         </div>

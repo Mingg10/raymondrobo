@@ -54,7 +54,7 @@
         <div class="gallery">
           <img class="media" src="../assets/img/nasa/trusses.gif" alt="Field docking demo" />
           <img class="media" src="../assets/img/nasa/SZT_CAD.png" alt="Docking view" />
-          <img class="media" src="../assets/img/nasa/spirit.jpg" alt="Spirit + turret setup" />
+          <img class="media" src="../assets/img/nasa/rover.gif" alt="Rover Control setup" />
         </div>
       </div>
     </section>
@@ -64,20 +64,24 @@
       <div class="container two-col">
         <div class="card">
           <h2>Overview</h2>
-          <p>
-            Built a modular rover platform under NASA LASSIE. Implemented AprilTag-based self-docking with
-            yaw/pitch alignment and range gating; fused GPS/IMU for localization using an EKF; coordinated
-            rover–turret behavior with ROS 2 actions.
-          </p>
+          <ul class="bullets">
+            <li><b>Yaw–Pitch Turret & AprilTag Tracking:</b> Developed a two-axis turret for automated visual docking. The system continuously tracked AprilTags to align docking position and orientation within <b>±1.5° RMS error</b>.</li>
+            
+            <li><b>Rover Mechanical Design & Fabrication:</b> Modeled the 4-wheel rover chassis and docking interface in <b>SolidWorks</b>, fabricated using <b>3D printing and CNC-machined aluminum parts</b>, achieving a <b>60 kg load capacity</b> and high structural durability under field conditions.</li>
+            
+            <li><b>Rover Control System:</b> Implemented differential-drive motion control on <b>Raspberry Pi 4 with ROS2</b>, running real-time <b>PID velocity control</b> and motor feedback for smooth docking and cooperative push–pull operations.</li>
+            
+            <li><b>Localization & Sensor Fusion:</b> Integrated <b>GPS and IMU</b> data through an <b>Extended Kalman Filter (EKF)</b> in ROS2, achieving <b>&lt;0.3 m drift</b> over 50 m trajectories for robust outdoor navigation.</li>
+          </ul>
         </div>
 
         <div class="card">
           <h2>Highlights</h2>
           <ul class="bullets">
-            <li>Docking alignment error &lt; <b>1.5° RMS</b> across varied lighting</li>
-            <li>State estimation drift &lt; <b>0.8%</b> over 300 m run (GPS + IMU EKF)</li>
-            <li>Deterministic recovery behaviors for tag loss / occlusion</li>
-            <li>Reusable ROS 2 packages with launch + params for field tuning</li>
+            <li> Autonomous AprilTag tracking and yaw–pitch turret alignment (<b>±1.5° RMS</b>)</li>
+            <li> SolidWorks design, 3D printing, and CNC machining for a <b>60 kg load chassis</b></li>
+            <li> ROS2-based differential control with <b>PID velocity loop</b> on Raspberry Pi 4</li>
+            <li> GPS + IMU fusion via EKF, achieving less than<b> 0.3 m localization drift</b> over 50m navigation</li>
           </ul>
         </div>
       </div>
