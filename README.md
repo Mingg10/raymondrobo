@@ -6,4 +6,4 @@ This is my personal portfolio website showcasing selected projects in robotics a
 
 
 ---
-⚡ Deployed with **GitHub Pages**.  
+Deployed with **GitHub Pages**.  
