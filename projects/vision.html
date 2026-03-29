@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vision-Based Pose Estimation</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <!-- Nav (same as home) -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="../index.html#home">Raymond Yang</a>
+      <ul class="nav-links">
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="../index.html#qualification">Qualification</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn ghost" href="../resume.pdf" target="_blank">Resume</a>
+        <a class="btn ghost" href="https://github.com/Mingg10" target="_blank" aria-label="GitHub">GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/mingguang-yang-308a0a23a" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Subhero -->
+    <section class="section subhero">
+      <div class="container">
+        <a class="breadcrumb" href="../index.html#projects">← Back to Projects</a>
+        <h1>Arena Battle Robot — Sensor Fusion & Embedded Control</h1>
+        <p class="muted">2025 · University of Pennsylvania · Coursework Project</p>
+
+        <div class="pill-row">
+          <span class="pill">Python</span>
+          <span class="pill">PyTorch</span>
+          <span class="pill">3D Vision</span>
+          <span class="pill">Bundle Adjustment</span>
+          <span class="pill">Multi-View Geometry</span>
+          <span class="pill">LoFTR</span>
+          <span class="pill">COLMAP</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Media gallery -->
+    <section class="section">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery">
+          <img class="media" src="../assets/img/vision/cloud.png" alt="cloud" />
+          <img class="media" src="../assets/img/vision/COLMAP.png" alt="COLMAP" />
+          <img class="media" src="../assets/img/vision/training.png" alt="training" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview / Highlights -->
+    <section class="section">
+      <div class="container two-col">
+        <div class="card">
+          <h2>Overview</h2>
+          <ul class="bullets">
+            <li><b>Multi-View Reconstruction Pipeline:</b> Built an end-to-end 3D reconstruction system from multi-view images, including feature extraction, matching, camera pose estimation, and point cloud generation.</li>
+
+            <li><b>Bundle Adjustment Optimization:</b> Implemented bundle adjustment in PyTorch to jointly optimize camera poses and 3D structure, minimizing reprojection error across all views.</li>
+
+            <li><b>Learned Feature Matching:</b> Integrated LoFTR for detector-free feature matching and compared against traditional SIFT features, improving robustness in low-texture and wide-baseline scenarios.</li>
+
+            <li><b>System Validation & Visualization:</b> Developed reprojection and loss visualization tools to analyze convergence behavior and reconstruction quality.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Highlights</h2>
+          <ul class="bullets">
+            <li> Implemented <b>full multi-view geometry pipeline</b> from feature matching to 3D reconstruction</li>
+            <li> Designed <b>joint optimization (BA)</b> over camera poses and 3D landmarks</li>
+            <li> Compared <b>classical vs learned feature matching (SIFT vs LoFTR)</b></li>
+            <li> Achieved stable convergence with <b>reprojection error minimization</b></li>
+            <li> Reconstructed <b>dense and consistent 3D point clouds</b> across multiple views</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-lg">Raymond Yang</div>
+        <div class="muted">Robotics / Mechatronics Engineer</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
