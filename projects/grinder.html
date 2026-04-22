@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Intelligent Lathe Tool Grinder — Mechanical Structure Design (Concept)</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <!-- Nav -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="../index.html#home">Raymond Yang</a>
+      <ul class="nav-links">
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="../index.html#qualification">Qualification</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn ghost" href="../resume.pdf" target="_blank">Resume</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sub-hero -->
+    <section class="section subhero">
+      <div class="container">
+        <a class="breadcrumb" href="../index.html#projects">← Back to Projects</a>
+        <h1>Intelligent Lathe Tool Grinder — Mechanical Structure Design</h1>
+        <p class="muted">2022 · Mechanism design · Mechatronics feasibility</p>
+
+        <div class="pill-row">
+          <span class="pill">SolidWorks</span>
+          <span class="pill">Mechanism Layout</span>
+          <span class="pill">Grinding Kinematics</span>
+          <span class="pill">Stiffness & Vibrations</span>
+          <span class="pill">Safety Brake</span>
+          <span class="pill">Serviceability</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery">
+          <!-- Replace with your images -->
+          <img class="media" src="../assets/img/grinder/assembly.png" alt="Overall grinder assembly concept" />
+          <img class="media" src="../assets/img/grinder/drawing.png" alt="3-DOF cutter orientation head" />
+          <img class="media" src="../assets/img/grinder/exploded.png" alt="XY feed stage and Z lift" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview / Mechanism -->
+    <section class="section">
+      <div class="container two-col">
+        <div class="card">
+          <h2>Overview</h2>
+          <ul class="bullets">
+            <li>Concept for an automated grinder to re-sharpen lathe tools with consistent geometry and repeatable angles.</li>
+            <li>Emphasis on <b>mechanical structure</b>: compact footprint, high stiffness paths, protected drives, and easy maintenance.</li>
+            <li>Designed for <b>three-axis tool orientation</b> (independent axes), plus <b>XY feed</b> and <b>Z lift</b> for wheel approach.</li>
+            <li>Focus areas: vibration control near the wheel, thermal growth paths, chip/dust management, and quick fixturing.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Mechanical Architecture</h2>
+          <ul class="bullets">
+            <li><b>Tool head (3-DOF):</b> decoupled rotations about X/Y/Z so the cutting faces can be aligned to the grinding plane without axis coupling.</li>
+            <li><b>Workstage:</b> precision XY linear guides for feed; <b>Z column lift</b> for wheel height set.</li>
+            <li><b>Wheel module:</b> cup/flat wheel options; guard, nozzle for coolant/air, and balance provision.</li>
+            <li><b>Base & frame:</b> cast or welded base with closed stiffness loops; motor mounts isolated from wheel vibration path.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Validation / Notes -->
+    <section class="section">
+      <div class="container two-col">
+        <div class="card">
+          <h2>Design Notes</h2>
+          <ul class="bullets">
+            <li><b>Stiffness & mass:</b> short load paths from wheel → spindle → column → base; ribbed plates where needed.</li>
+            <li><b>Bearings & off-loading:</b> hollow-shaft sleeves/paired bearings to off-load cantilever moments from small motors.</li>
+            <li><b>Leadscrews vs. rack:</b> fine manual trim via leadscrew (self-lock), optional servo on XY for programmable passes.</li>
+            <li><b>Serviceability:</b> front service windows, removable guards, labeled harnesses, and dust management covers.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Safety & Controls (Concept)</h2>
+          <ul class="bullets">
+            <li><b>Fail-safe brake:</b> power-off brake on orientation axes to hold pose during outages.</li>
+            <li><b>Interlocks:</b> door/guard interlocks; wheel overspeed limit by VFD; E-stop chain.</li>
+            <li><b>Wheel selection:</b> Al<sub>2</sub>O<sub>3</sub> for HSS; SiC/diamond for carbide; guards sized to wheel burst specs.</li>
+            <li><b>Future mechatronics:</b> stepper/servo drives with PLC or MCU for angle presets and feed sequences.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-lg">Raymond Yang</div>
+        <div class="muted">Mechanical / Mechatronics Engineer</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
