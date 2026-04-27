@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LiDAR-Based SLAM for Autonomous Navigation</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <!-- Nav (same as home) -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="../index.html#home">Raymond Yang</a>
+      <ul class="nav-links">
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="../index.html#qualification">Qualification</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn ghost" href="../resume.pdf" target="_blank">Resume</a>
+        <a class="btn ghost" href="https://github.com/Mingg10" target="_blank" aria-label="GitHub">GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/mingguang-yang-308a0a23a" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Subhero -->
+    <section class="section subhero">
+      <div class="container">
+        <a class="breadcrumb" href="../index.html#projects">← Back to Projects</a>
+        <h1>LiDAR-Based SLAM for Autonomous Navigation</h1>
+        <p class="muted">2026 · University of Pennsylvania · Robotics Coursework</p>
+
+        <div class="pill-row">
+          
+          <span class="pill">Python</span>
+          <span class="pill">SLAM</span>
+          <span class="pill">Particle Filter</span>
+          <span class="pill">LiDAR</span>
+          <span class="pill">Occupancy Grid</span>
+          <span class="pill">Sensor Fusion</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Media gallery -->
+    <section class="section">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery">
+          <img class="media" src="../assets/img/SLAM/coord.png" alt="coord" />
+          <img class="media" src="../assets/img/SLAM/result.png" alt="result" />
+          <img class="media" src="../assets/img/SLAM/thumb.png" alt="setup" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview / Highlights -->
+    <section class="section">
+      <div class="container two-col">
+        <div class="card">
+          <h2>Overview</h2>
+          <ul class="bullets">
+            <li><b>LiDAR-Based SLAM Pipeline:</b> Developed a full SLAM system using LiDAR data, integrating motion prediction, observation likelihood estimation, and particle filter-based localization.</li>
+
+            <li><b>Probabilistic Occupancy Mapping:</b> Built an occupancy grid map using log-odds representation, enabling efficient Bayesian updates from sequential LiDAR observations.</li>
+
+            <li><b>Particle Filter Localization:</b> Implemented motion propagation with Gaussian noise and observation-based weight updates, maintaining a distribution over possible robot poses.</li>
+
+            <li><b>Robust State Estimation:</b> Applied stratified resampling based on effective particle size to mitigate particle degeneracy and improve localization stability.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Highlights</h2>
+          <ul class="bullets">
+            <li> Implemented <b>full SLAM pipeline</b> from motion prediction to mapping</li>
+            <li> Designed <b>probabilistic mapping using log-odds</b></li>
+            <li> Developed <b>LiDAR-based observation likelihood model</b></li>
+            <li> Implemented <b>stratified resampling</b> for particle filter stability</li>
+            <li> Achieved consistent <b>localization and mapping under uncertainty</b></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-lg">Raymond Yang</div>
+        <div class="muted">Robotics / Mechatronics Engineer</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
